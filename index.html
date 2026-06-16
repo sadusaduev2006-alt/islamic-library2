@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <title>Исламская библиотека</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        
+        <!-- ===== АРАБСКИЕ ФРАЗЫ ===== -->
+        <div class="arabic-top">
+            <div class="arabic-line">أَعُوذُ بِاللَّهِ مِنَ الشَّيْطَانِ الرَّجِيمِ</div>
+            <div class="arabic-line bismillah">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</div>
+        </div>
+
+        <!-- ===== ГЛАВНОЕ МЕНЮ ===== -->
+        <div id="mainMenu">
+            
+            <!-- ===== ШАХАДА ===== -->
+            <div class="shahada-block">
+                <div class="shahada-text">
+                    <span class="shahada-arabic">أَشْهَدُ أَنْ لَا إِلَٰهَ إِلَّا اللَّهُ وَأَشْهَدُ أَنَّ مُحَمَّدًا رَسُولُ اللَّهِ</span>
+                    <span class="shahada-russian">«Свидетельствую, что нет божества, кроме Аллаха, и что Мухаммад — Посланник Аллаха»</span>
+                </div>
+            </div>
+
+            <!-- ===== ПРИВЕТСТВИЕ ===== -->
+            <div class="greeting">
+                <p class="salam">
+                    Ас-саляму алейкум ва рахматуллахи ва баракатух!
+                    <span class="salam-translate">(Мир вам, милость Аллаха и Его благословения)</span>
+                </p>
+
+                <div class="purpose">
+                    🤲 Этот сайт создан для распространения знаний ради довольства Аллаха. 
+                    Мы стремимся принести пользу (наф’) каждому мусульманину.
+                </div>
+
+                <div class="quotes">
+                    <div class="quote-item">
+                        <span class="q-icon">📖</span>
+                        <span class="q-label">Всевышний сказал:</span>
+                        <span class="q-text">«...Скажи: "Господь мой, приумножь мои знания"»</span>
+                        <span class="q-source">(20:114)</span>
+                    </div>
+                    <div class="quote-item">
+                        <span class="q-icon">📜</span>
+                        <span class="q-label">Пророк (ﷺ) сказал:</span>
+                        <span class="q-text">«Кто встанет на путь знаний, тому Аллах облегчит путь в Рай»</span>
+                        <span class="q-source">(Муслим)</span>
+                    </div>
+                </div>
+
+                <p class="menu-title">📚 Выберите раздел:</p>
+            </div>
+
+            <!-- ===== КНОПКИ ===== -->
+            <div class="main-grid">
+                <button class="main-card" onclick="showCatalog()">
+                    <span class="card-icon">📚</span>
+                    <span class="card-title">Каталог книг</span>
+                    <span class="card-desc">Акыда · Тафсир · Фикх · Сира</span>
+                </button>
+
+                <button class="main-card" onclick="showAudio()">
+                    <span class="card-icon">🎙️</span>
+                    <span class="card-title">Аудио</span>
+                    <span class="card-desc">Чтецы · Лекции · Нашиды</span>
+                </button>
+
+                <button class="main-card" onclick="showSection('Видео')">
+                    <span class="card-icon">📹</span>
+                    <span class="card-title">Видео</span>
+                    <span class="card-desc">Уроки · Лекции · Проповеди</span>
+                </button>
+
+                <button class="main-card" onclick="showSection('Истории пророков')">
+                    <span class="card-icon">🌟</span>
+                    <span class="card-title">Истории пророков</span>
+                    <span class="card-desc">Жизнь посланников Аллаха</span>
+                </button>
+
+                <button class="main-card" onclick="showSection('Сподвижники')">
+                    <span class="card-icon">⚔️</span>
+                    <span class="card-title">Сподвижники</span>
+                    <span class="card-desc">Сахабы (радыАллаху анхум)</span>
+                </button>
+
+                <button class="main-card" onclick="showSection('Дуа и зикры')">
+                    <span class="card-icon">🤲</span>
+                    <span class="card-title">Дуа и зикры</span>
+                    <span class="card-desc">Мольбы и поминания Аллаха</span>
+                </button>
+            </div>
+
+            <!-- ===== НИЖНЯЯ ЧАСТЬ ===== -->
+            <div class="footer-block">
+                <a href="https://t.me/sadusaduev2006" target="_blank" class="telegram-btn">
+                    💬 Написать в Telegram
+                </a>
+                <p class="feedback-text">Нашли ошибку или есть предложение? Напишите нам!</p>
+
+                <div class="dua-block">
+                    <p class="dua">
+                        🤲 Пусть Аллах примет наш труд, простит ошибки и сделает эти знания 
+                        <span class="dua-emphasis">тяжёлыми на весах в Судный день</span>. Амин!
+                    </p>
+                    <p class="dua-arabic">
+                        رَبَّنَا تَقَبَّلْ مِنَّا ۖ إِنَّكَ أَنْتَ السَّمِيعُ الْعَلِيمُ
+                        <span class="dua-arabic-source">(2:127)</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- ===== КАТАЛОГ КНИГ ===== -->
+        <div id="catalogSection" style="display: none;">
+            <div class="section-top">
+                <button class="back-btn" onclick="showMainMenu()">← На главную</button>
+                <h2 class="section-title">📚 Каталог книг</h2>
+            </div>
+            <div id="catalogCategories" class="catalog-grid"></div>
+            <div id="booksListContainer"></div>
+        </div>
+
+        <!-- ===== АУДИО ===== -->
+        <div id="audioSection" style="display: none;">
+            <div class="section-top">
+                <button class="back-btn" onclick="showMainMenu()">← На главную</button>
+                <h2 class="section-title">🎙️ Аудио</h2>
+            </div>
+            <div id="audioContent"></div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
